@@ -43,7 +43,12 @@ var background = function (window) {
             background.addChild(backgroundFill);
             
             // TODO 2: - Add a moon and starfield
-            
+            var moon = draw.bitmap("img/moon.png");
+            moon.x = 300;
+            moon.y = 200;
+            moon.scaleX = 10.0;
+            moon.scaleY = 10.0;
+            background.addChild(moon);
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             

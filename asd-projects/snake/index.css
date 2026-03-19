@@ -1,17 +1,20 @@
 
 body {
-  background-color: darkgreen;
+  background-color: rgb(20, 20, 20);
 }
 
 #board {
   width: 440px;
   height: 440px;
-  border: 1px solid white;
-  background-color: black;
+  border: 21px solid rgb(199, 18, 18);
+  background-color: rgb(44, 11, 176);
 }
 
 #score, #highScore {
-  color: white;
+  color: rgb(221, 15, 15);
+  font-family: brush script MT;
+  font-size: 50px;
+
 }
 
 .snake, .apple {
@@ -32,6 +35,6 @@ body {
 }
 
 .apple {
-  background-color: red;
+  background-color: rgb(201, 22, 43);
   z-index: 1;
 }

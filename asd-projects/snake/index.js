@@ -17,7 +17,8 @@ var apple = {};
 
 // TODO 5, Part 1: Create the snake variable
 const snake = {};
-
+var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+var colorIndex = 0;
 // Constant Variables
 var ROWS = 20;
 var COLUMNS = 20;
@@ -206,6 +207,10 @@ function handleAppleCollision() {
   var column = snake.tail.column;
 
   makeSnakeSquare(row, column);
+
+  snake.tail.element.css("backgroundColor", colors[colorIndex]);
+
+colorIndex = (colorIndex + 1) % colors.length;
 }
 
 function hasCollidedWithSnake() {
